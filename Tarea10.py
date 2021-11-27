@@ -3,7 +3,7 @@ from tkinter import *  #Importamos todas las funciones que contiene tkinter
 #Creamos el objeto que será la raiz de la aplicación
 window = Tk()
 #Le agregamos un título
-window.title("Bienvenido a la aplicación de Ensaladas Gourmet")
+window.title("Bienvenido a la aplicación de Ensaladas Eduardo")
 #Determinamos si se podrá cambiar su tamaño
 window.resizable(1,1)
 #Asignamos un logotipo
@@ -30,7 +30,7 @@ label2 = Label(frame1, text="CURP")
 label2.grid(row=1, column=0)
 entry2 = Entry(frame1)
 entry2.grid(row=1, column=1)
-label3 = Label(frame1, text="RFC")
+label3 = Label(frame1, text="INE")
 label3.grid(row=2, column=0)
 entry3 = Entry(frame1)
 entry3.grid(row=2, column=1)
@@ -57,7 +57,7 @@ Button(window, text="Reiniciar", command=reset).pack()
 def seleccionar():
 	cadena = ""
 	if (verdura.get()):
-		cadena += "Con lechuga, jitomate y betabel"
+		cadena += "Con lechuga, jitomate y zanahoria"
 	else:
 		cadena += " Sin verdura"
 
